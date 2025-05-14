@@ -358,7 +358,7 @@ app.delete("/delete-image/:productId/:imageId", async (req, res) => {
 console.log("cartRouter:", cartRouter);
 
 mongoose
-  .connect(MONGO_URI)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("connectt to DB");
     app.listen(PORT, () => console.log("Server is running"));
