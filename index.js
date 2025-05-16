@@ -79,7 +79,8 @@ app.use('/api/checkoutform', checkoutformrouter )
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://toywebsitefrontend-rhi8.vercel.app",
     methods: "GET, POST, PUT, DELETE",
     allowedHeaders: ["Content-Type"],
     credentials: true,
